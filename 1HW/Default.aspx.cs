@@ -11,15 +11,18 @@ namespace _1HW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int i = 31;
             string answer = "";
-            if (i % 1 == i || i % i == 1)
-            {
-                answer = "NO";
-            }
-            else
-            {
-                answer = "YES";
+            int i = 22;
+            for (int i_Ct = 2; i_Ct < 22; i_Ct++) { 
+                if (i % i_Ct == 0) {
+                    answer = "NO";
+                    break;
+                }
+                else
+                {
+                    answer = "YES";
+                }
+
             }
             Response.Write(answer);
         }

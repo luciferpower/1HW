@@ -9,7 +9,8 @@
 
 
 namespace _1HW {
-    public partial class Default {
+    public partial class Default
+    {
 
         /// <summary>
         /// form1 控制項。
